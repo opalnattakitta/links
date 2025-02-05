@@ -1,0 +1,3 @@
+A Digital Archive of the Asian-American Diaspora
+
+This website is a curated collection exploring the diverse experiences, histories, and cultural identities of the Asian-American diaspora. Through articles, personal stories, visual art, historical documents, and multimedia, it highlights themes of immigration, identity, activism, and representation. From first-generation struggles to the evolving narratives of Asian-American communities today, this archive serves as a living resource for learning, reflection, and connection.
