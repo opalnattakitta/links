@@ -80,6 +80,13 @@ img:hover {
 	font-family: var(--chinese-font);
 }
 
+.side-text{
+	text-align: center;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-family: "Ma Shan Zheng", serif;
+}
+
 p{
 	color: var(--red);
 	font-family: var(--base-font);
