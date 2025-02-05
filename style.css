@@ -1,3 +1,20 @@
+:root {
+	--header-size: 100px;
+	--base-size: 20px;
+	--footer-size: 13px;
+	--category-size: 22px;
+
+	--red: #af0000; 
+	--blue: #0000c8;
+	--cream: rgb(254, 250, 235);
+
+	--chinese-font: "ZCOOL QingKe HuangYou", serif;
+	--base-font: "Fredoka", serif;
+	--category-font: 
+}
+
+
+
 img {
 	object-fit: contain;
 	border-radius: 10px;
@@ -8,18 +25,18 @@ img:hover {
 }
 
 .img-grid-2{
-	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	border-top: solid var(--red) 1px;
+	border-bottom: solid var(--red) 1px;
 }
 
 .img-grid-1{
-	border-right: solid black 1px;
-	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	border-right: solid var(--red) 1px;
+	border-top: solid var(--red) 1px;
+	border-bottom: solid var(--red) 1px;
 }
 
 .img-grid{
-	border: solid black 1px;
+	border: solid 1px var(--red);
 }
 
 .grid-container{
@@ -27,12 +44,45 @@ img:hover {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.category-font{
+	color: var(--cream);
+	font-size: var(--category-size);
+	font-family: var(--chinese-font);
+	text-align: center;
+	padding: 10px;
+}
+
 .category-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	border: solid black 1px;
+	border: solid 1px var(--red);
+	background-color: var(--red);
+	border-radius: 20px 20px 0px 0px;
+}
+
+p{
+	color: var(--red);
+	font-family: var(--base-font);
+}
+
+footer{
+	font-size: var(--footer-size);
+	text-align: center;
+	margin: 30px 20px;
+}
+
+h1 p{
+
 }
 
 h1{
-	
+	font-size: var(--header-size);
+	font-family: var(--chinese-font);
+	color: var(--red);
+	text-align: center;
+}
+
+body{
+	background-color: var(--cream);
+	margin: 50px;
 }
