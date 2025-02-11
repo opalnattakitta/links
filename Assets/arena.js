@@ -38,7 +38,7 @@ let renderBlock = (block) => {
 	if (block.class == 'Link') {
 		let linkItem =
 			`
-			<div>
+			<li>
 				<p><em>Link</em></p>
 				<picture>
 					<source media="(max-width: 428px)" srcset="${ block.image.thumb.url }">
@@ -48,7 +48,7 @@ let renderBlock = (block) => {
 				<h3>${ block.title }</h3>
 				${ block.description_html }
 				<p><a href="${ block.source.url }">See the original ↗</a></p>
-			</div>
+			</li>
 			`
 		channelBlocks.insertAdjacentHTML('beforeend', linkItem)
 	}
@@ -57,17 +57,10 @@ let renderBlock = (block) => {
 	else if (block.class == 'Image') {
 		let ImageItem =
 		`
-		<div>
-			<p><em>Image</em></p>
-			<picture>
-				<source media="(max-width: 428px)" srcset="${ block.image.thumb.url }">
-				<source media="(max-width: 640px)" srcset="${ block.image.large.url }">
-				<img src="${ block.image.original.url }">
-			</picture>
-			<h3>${ block.title }</h3>
-			${ block.description_html }
-			<p><a href="${ block.image.thumb.url }">See the original ↗</a></p>
-		</div>
+			<li>
+				<img class="image" src="${block.image.original.url}"></img>
+				<h3 class="block-title">${block.title}</h3>
+			</li>
 		`
 	channelBlocks.insertAdjacentHTML('beforeend', ImageItem)
 	}
@@ -86,10 +79,10 @@ let renderBlock = (block) => {
 			// …still up to you, but we’ll give you the `video` element:
 			let videoItem =
 				`
-				<li>
-					<p><em>Video</em></p>
-					<video controls src="${ block.attachment.url }"></video>
-				</li>
+				<li class="video-block">
+				<img src="${ block.image.thumb.url }"><img>
+				<h3 class="block-title">${block.generated_title}</h3>
+			</li>
 				`
 			channelBlocks.insertAdjacentHTML('beforeend', videoItem)
 			// More on video, like the `autoplay` attribute:

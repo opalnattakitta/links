@@ -13,9 +13,14 @@
 	--base-font: "poppins", serif;
 }
 
-
+.video-block{
+	width:300px;
+}
 
 img {
+	width: 100px;
+	/* height: 100%; */
+	/* flex-grow: 1; */
 	object-fit: contain;
 }
 
@@ -23,7 +28,7 @@ img:hover {
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.img-grid-2{
+/* .img-grid-2{
 	border-top: solid var(--red) 1px;
 	border-bottom: solid var(--red) 1px;
 }
@@ -36,7 +41,7 @@ img:hover {
 
 .img-grid{
 	border: solid 1px var(--red);
-}
+} */
 
 .description{
 	border-bottom: solid 1px var(--red);
@@ -85,6 +90,10 @@ img:hover {
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	font-family: "Ma Shan Zheng", serif;
+}
+
+.link-block{
+
 }
 
 p{
