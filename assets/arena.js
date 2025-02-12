@@ -39,14 +39,14 @@ let renderBlock = (block) => {
 		let linkItem =
 			`
 			<li>
-				<p><em>Link</em></p>
+				<h3>${ block.title }</h3>
+					${ block.description_html }
+				<p><em></em></p>
 				<picture> 
 					<source media="(max-width: 428px)" srcset="${ block.image.thumb.url }">
 					<source media="(max-width: 640px)" srcset="${ block.image.large.url }">
 					<img src="${ block.image.original.url }">
 				</picture>
-				<h3>${ block.title }</h3>
-				${ block.description_html }
 				<p><a href="${ block.source.url }">See the original ↗</a></p>
 			</li>
 			`
@@ -80,10 +80,11 @@ let renderBlock = (block) => {
 			let videoItem =
 				`
 				<li class="video-block">
-				<img src="${ block.image.thumb.url }"><img>
 				<h3 class="block-title">${block.generated_title}</h3>
+				<img src="${ block.image.thumb.url }"></img>
 				</li>
 				`
+				console.log ("block",block)
 			channelBlocks.insertAdjacentHTML('beforeend', videoItem)
 			// More on video, like the `autoplay` attribute:
 			// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
@@ -100,13 +101,12 @@ let renderBlock = (block) => {
 			let audioItem =
 				`
 				<li>
+					<h3 class="block-title">${block.generated_title}</h3>
 					<p><em>Audio</em></p>
 					<audio controls src="${ block.attachment.url }"></video>
 					<img src="${ block.image.thumb.url }"><img>
-					<h3 class="block-title">${block.generated_title}</h3>
 				</li>
 				`
-				console.log ("block",block)
 			channelBlocks.insertAdjacentHTML('beforeend', audioItem)
 			// More on audio: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
 		}
