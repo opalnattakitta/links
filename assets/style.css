@@ -3,7 +3,8 @@
 	--base-size: 20px;
 	--footer-size: 13px;
 	--category-size: 22px;
-	--des-size: 12px;
+	--des-size: 13px;
+	--filetitle-size: 14px;
 
 	--red: #af0000; 
 	--blue: #0000c8;
@@ -28,7 +29,7 @@ img {
 }
 
 img:hover {
-	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 2px 1px rgba(125, 13, 13, 0.5);
 }
 
 /* .img-grid-2{
@@ -98,6 +99,10 @@ img:hover {
 	max-width: 100px;
 }
 
+.first-paragraph{
+	font-size: 100px;
+}
+
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -107,11 +112,14 @@ img:hover {
 
 li {
 	max-width: fit-content;
+	border-left: solid 1px var(--red);
+	border-bottom: solid 1px var(--red);
+
 }
 
 h3{
 	font-family: var(--base-font);
-	font-size: var(--des-size);
+	font-size: var(--filetitle-size);
 	color: var(--red);
 	margin-bottom: 20px;
 	border-bottom: solid 1px var(--red);
@@ -120,7 +128,7 @@ h3{
 p{
 	color: var(--red);
 	font-family: var(--base-font);
-	font-size: var(--des-size);
+	font-size: var(--base-size);
 }
 
 footer{
