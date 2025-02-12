@@ -19,7 +19,7 @@
 }
 
 img {
-	width: 100px;
+	width: 220px;
 	/* height: 100%; */
 	/* flex-grow: 1; */
 	object-fit: contain;
@@ -53,6 +53,7 @@ img:hover {
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	border: solid 2px var(--red);
 }
 
 .category-font{
@@ -95,6 +96,22 @@ img:hover {
 
 .link-block{
 
+}
+
+.youtube-block{
+	max-width: 100px;
+}
+
+li {
+	max-width: fit-content;
+}
+
+h3{
+	font-family: var(--base-font);
+	font-size: var(--des-size);
+	color: var(--red);
+	max-width: 200px;
+	margin-bottom: 20px;
 }
 
 p{
