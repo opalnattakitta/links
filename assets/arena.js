@@ -38,7 +38,7 @@ let renderBlock = (block) => {
 	if (block.class == 'Link') {
 		let linkItem =
 			`
-			<li>
+			<li class="link-block">
 				<h3>${ block.title }</h3>
 					${ block.description_html }
 				<p><em></em></p>
@@ -57,7 +57,7 @@ let renderBlock = (block) => {
 	else if (block.class == 'Image') {
 		let ImageItem =
 		`
-			<li>
+			<li class="image-block">
 				<h3 class="block-title">${block.title}</h3>
 				<img class="image" src="${block.image.original.url}"></img>
 			</li>
@@ -68,6 +68,16 @@ let renderBlock = (block) => {
 	// Text!
 	else if (block.class == 'Text') {
 		// …up to you!
+		console.log(block)
+		let textItem =
+		`
+			<li class="text-block">
+				<h3>${ block.title }</h3>
+					${ block.description_html }
+				<p><em>Text</em></p>
+				<p><a href="${ block.source.url }">See the original ↗</a></p>
+			</li>
+			`
 	}
 
 	// Uploaded (not linked) media…
@@ -100,7 +110,7 @@ let renderBlock = (block) => {
 			// …still up to you, but here’s an `audio` element:
 			let audioItem =
 				`
-				<li>
+				<li class="audio-block">
 					<h3 class="block-title">${block.generated_title}</h3>
 					<p><em>Audio</em></p>
 					<audio controls src="${ block.attachment.url }"></video>
@@ -121,7 +131,7 @@ let renderBlock = (block) => {
 			// …still up to you, but here’s an example `iframe` element:
 			let linkedVideoItem =
 				`
-				<li>
+				<li class="video-block">
 					<p><em>Linked Video</em></p>
 					${ block.embed.html }
 				</li>

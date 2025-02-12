@@ -10,6 +10,7 @@
 	</style>
 
 	<script defer src="assets/arena.js"></script>
+	<script defer src="assets/main.js"></script>
 	</head>
 
 	<body>
@@ -24,8 +25,8 @@
 			<header>
 				<h1 id="channel-title">Asian American Diaspora</h1>
 				<h1>數位檔案</h1>
-				<p><a id="channel-link">See on Are.na ↗</a></p>
 				<section id="channel-description"></section>
+				<p><a id="channel-link">See on Are.na ↗</a></p>
 			</header>
 
 				<main>
@@ -41,7 +42,12 @@
 					
 					<section>
 						<h2></h2>
-							<ul class= "grid-container" id="channel-blocks" ></ul>
+						<ul>
+							<button>Show Videos</button>
+							<button>Show All</button>
+						</ul>
+							<!-- <ul class= "grid-container" id="channel-blocks" ></ul> -->
+							<ul class= "show-video" id="channel-blocks" ></ul>
 						<!-- all your arena blocks go inside this ul -->
 						<p><span id="channel-count"></span> blocks</p>
 					
