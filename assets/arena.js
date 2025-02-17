@@ -36,6 +36,8 @@ let renderBlock = (block) => {
 
 	// Links! // 428 640
 	if (block.class == 'Link') {
+
+		console.log ("link",block)
 		let linkItem =
 			`
 			<li class="link-block">
@@ -55,6 +57,7 @@ let renderBlock = (block) => {
 
 	// Images!
 	else if (block.class == 'Image') {
+		console.log ("image",block)
 		let ImageItem =
 		`
 			<li class="image-block">
@@ -67,21 +70,21 @@ let renderBlock = (block) => {
 
 	// Text!
 	else if (block.class == 'Text') {
+		console.log ("text",block)
 		// …up to you!
-		console.log(block)
 		let textItem =
 		`
 			<li class="text-block">
 				<h3>${ block.title }</h3>
 					${ block.description_html }
 				<p><em>Text</em></p>
-				<p><a href="${ block.source.url }">See the original ↗</a></p>
 			</li>
 			`
 	}
 
 	// Uploaded (not linked) media…
 	else if (block.class == 'Attachment') {
+		console.log ("attachment",block)
 		let attachment = block.attachment.content_type // Save us some repetition
 
 		// Uploaded videos!
@@ -94,7 +97,6 @@ let renderBlock = (block) => {
 				<img src="${ block.image.thumb.url }"></img>
 				</li>
 				`
-				console.log ("block",block)
 			channelBlocks.insertAdjacentHTML('beforeend', videoItem)
 			// More on video, like the `autoplay` attribute:
 			// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
@@ -107,6 +109,7 @@ let renderBlock = (block) => {
 
 		// Uploaded audio!
 		else if (attachment.includes('audio')) {
+			console.log ("audio",block)
 			// …still up to you, but here’s an `audio` element:
 			let audioItem =
 				`
@@ -124,6 +127,7 @@ let renderBlock = (block) => {
 
 	// Linked media…
 	else if (block.class == 'Media') {
+		console.log ("media",block)
 		let embed = block.embed.type
 
 		// Linked video!
