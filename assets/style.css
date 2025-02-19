@@ -88,8 +88,9 @@
 
 img {
 	font-weight: 300;
-	width: 365px;
-	justify-content: center;
+	width: 100%;
+	/* width: 365px; */
+	margin-bottom: auto;
 	/* height: 100%; */
 	/* flex-grow: 1; */
 	object-fit: cover;
@@ -318,6 +319,10 @@ body{
 
 @media (min-width: 700px) {
 
+	img {
+		width: 100%;
+	}
+
 	.center-align {
 		
 	}
@@ -351,7 +356,7 @@ body{
 
 	img {
 		font-weight: 300;
-		width: 365px;
+		/* width: 350px; */
 		justify-content: center;
 		/* height: 100%; */
 		/* flex-grow: 1; */
