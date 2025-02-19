@@ -27,6 +27,11 @@
 	width:300px;
 } */
 
+#channel-description{
+	padding: 10px;
+	border: solid var(--red);
+}
+
  /* javascript add show class */
 .show-audio{
 	li {
@@ -91,8 +96,8 @@ button {
 }
 
 img {
-	width: 250px;
-	height: 70%;
+	width: 365px;
+	height: 100%;
 	justify-content: center;
 	/* height: 100%; */
 	/* flex-grow: 1; */
@@ -253,13 +258,14 @@ p.side-font{
 /* top red bar */
 
 ul {
-	/* border: solid 2px var(--red); */
+	border: solid 1px var(--red);
 }
 
 li {
 	max-width: fit-content;
-	border-left: solid 1px var(--red);
-	border-bottom: solid 1px var(--red);
+	/* border: solid 1px var(--red); */
+	/* border-left: solid 1px var(--red);
+	border-bottom: solid 1px var(--red); */
 	justify-content: center;
 }
 
