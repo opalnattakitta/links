@@ -16,8 +16,9 @@
 	--base-font: "poppins", serif;
 
 	/* primary color */
-	--red: #af0000; 
-	--blue: #0000c8;
+	--red: #a30202; 
+	--blue: #0e0e93;
+	--green: #034225;
 	/* background-color */
 	--cream: rgb(254, 250, 235);
 }
@@ -146,12 +147,13 @@ img:hover {
 	font-size: calc(var(--header-size) * 0.9);
 	writing-mode: vertical-rl;
 	text-orientation: upright;
+	color: var(--blue);
 }
 
 .title-flex{
 	display: flex;
 	justify-content:space-between;
-	margin: 40px 0px 40px 0px;
+	margin: 35px 0px 35px 0px;
 }
 
 .small-star{
@@ -210,22 +212,16 @@ h3{
 	padding-left: 5px;
 }
 
+h1{
+	font-size: calc(var(--header-size) * 1.1);
+	font-family: var(--chinese-font);
+	text-align: center;
+}
+
 p{
 	color: var(--red);
 	font-family: var(--base-font);
 	font-size: calc(var(--base-size) * 0.9);
-}
-
-/* footer{
-	font-size: var(--footer-size);
-	text-align: center;
-	margin: 30px 20px;
-} */
-
-h1{
-	font-size: var(--header-size);
-	font-family: var(--chinese-font);
-	text-align: center;
 }
 
 main{
