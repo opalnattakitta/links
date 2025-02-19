@@ -18,6 +18,16 @@
 	width:300px;
 }
 
+.show-image{
+	li {
+		display:none;
+	}
+
+	li.image-block {
+		display: block;
+	}
+}
+
 .show-video{
 	li {
 		display:none;
@@ -114,10 +124,6 @@ img:hover {
 	font-family: "Ma Shan Zheng", serif;
 }
 
-.link-block{
-
-}
-
 .youtube-block{
 	max-width: 100px;
 }
@@ -128,7 +134,7 @@ img:hover {
 
 .grid-container{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: minmax(300px,100px);
 	border: solid 2px var(--red);
 }
@@ -174,3 +180,4 @@ body{
 	background-color: var(--cream);
 	margin: 50px;
 }
+
