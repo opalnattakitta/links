@@ -6,7 +6,7 @@
 	--top-bottom: 10px 0px 10px 0px;
 	
 	/* font size */
-	--header-size: 3.5rem;
+	--header-size: 3.3rem;
 	/* --category-size: 22px;
 	--des-size: 13px;
 	--filetitle-size: 14px; */
@@ -82,8 +82,10 @@
 
 
 button {
-	padding: 1em;
-	background-color: teal;
+	color: var(--cream);
+	background-color: var(--green);
+	font-size: calc(var(--base-size) * 0.5);
+	padding: 10px;
 	border-radius: 50px;
 	cursor: pointer;
 }
@@ -114,7 +116,6 @@ img:hover {
 	text-align: center;
 	padding: 10px;
 }
-
 .category-container{
 	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
 	border: solid 1px var(--red);
@@ -123,28 +124,31 @@ img:hover {
 	margin-top: 20px;
 }
 
-
-
-.youtube-block{
-	max-width: 100px;
+a#channel-link{
+	text-align: center;
 }
 
+/* 
+.youtube-block{
+	max-width: 100px;
+} */
 
-.grid-container{
+
+/* .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: minmax(300px,100px);
 	border: solid 2px var(--red);
-}
+} */
 
+/* this section is for header big number */
 /* vertical title  */
-
 .center-number{
-	font-size: calc(var(--header-size) * 4);
+	font-size: calc(var(--header-size) * 3.5);
 }
 
 .vertical-title{
-	font-size: calc(var(--header-size) * 0.9);
+	font-size: calc(var(--header-size) * 0.7);
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	color: var(--blue);
@@ -153,7 +157,7 @@ img:hover {
 .title-flex{
 	display: flex;
 	justify-content:space-between;
-	margin: 35px 0px 35px 0px;
+	margin: 20px 0px 30px 0px;
 }
 
 .small-star{
@@ -213,7 +217,7 @@ h3{
 }
 
 h1{
-	font-size: calc(var(--header-size) * 1.1);
+	font-size: calc(var(--header-size) * 1);
 	font-family: var(--chinese-font);
 	text-align: center;
 }
