@@ -1,6 +1,9 @@
 :root {
 	--base-size: 16px;
 	--gutter: calc(var(--base-size));
+
+	/* space top bottom; */
+	--top-bottom: 10px 0px 10px 0px;
 	
 	/* font size */
 	--header-size: 3.5rem;
@@ -76,13 +79,6 @@
 
 /* java class */
 
-.vertical-title{
-	font-size: calc(var(--header-size));
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	margin: auto;
-}
-
 
 button {
 	padding: 1em;
@@ -140,8 +136,27 @@ img:hover {
 	border: solid 2px var(--red);
 }
 
+/* vertical title  */
+
+.center-number{
+	font-size: calc(var(--header-size) * 4);
+}
+
+.vertical-title{
+	font-size: calc(var(--header-size) * 0.9);
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
 .title-flex{
 	display: flex;
+	justify-content:space-between;
+	margin: 40px 0px 40px 0px;
+}
+
+.small-star{
+	font-family: var(--chinese-font);
+	font-size: calc(var(--base-size) * 2);
 }
 
 /* top red bar */
