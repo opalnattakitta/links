@@ -124,14 +124,71 @@ img:hover {
 	margin-top: 20px;
 }
 
+.red-tab-category{
+
+}
+
 .center-align{
 	text-align: center;
 }
 
-/* 
-.youtube-block{
-	max-width: 100px;
-} */
+/* dropdown media selection */
+
+
+/* Basic dropdown container */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Button styling */
+.dropbtn {
+	font-size: calc(var(--base-size) * 1.2);
+	font-family: var(--chinese-font);
+	background-color: var(--red);
+	color: var(--cream);
+	text-align: center;
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border-radius: 20px 20px 0px 0px;
+	cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+	color: black;
+	padding: 10px 15px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown when hovering over the button */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change button color on hover */
+.dropdown:hover .dropbtn {
+	background-color: var(--green);
+}
+
 
 
 /* .grid-container{
@@ -238,9 +295,19 @@ body{
 	background-color: var(--cream);
 }
 
-@media (min-width: 500px) {
-
+@media (max-width: 500px) {
+	nav {
+		display: none;
+	}
 }
+
+@media (min-width: 500px) {
+	div .dropdown {
+		display: none;
+	}
+}
+
+
 
 @media (min-width: 700px) {
 	ul {
@@ -251,11 +318,20 @@ body{
 	.category-container {
 	grid-template-columns: 1fr;
 	}
+
+	div .dropdown {
+		display: none;
+	}
+
 }
 
 @media (min-width: 1000px) {
 	.category-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.dropdown {
+		display: none;
 	}
 }
