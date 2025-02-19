@@ -3,7 +3,7 @@
 	--gutter: calc(var(--base-size));
 	
 	/* font size */
-	--header-size: 3rem;
+	--header-size: 3.5rem;
 	/* --category-size: 22px;
 	--des-size: 13px;
 	--filetitle-size: 14px; */
@@ -19,9 +19,9 @@
 	--cream: rgb(254, 250, 235);
 }
 
-.video-block{
+/* .video-block{
 	width:300px;
-}
+} */
 
  /* javascript add show class */
 .show-audio{
@@ -76,6 +76,14 @@
 
 /* java class */
 
+.vertical-title{
+	font-size: calc(var(--header-size));
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	margin: auto;
+}
+
+
 button {
 	padding: 1em;
 	background-color: teal;
@@ -118,34 +126,12 @@ img:hover {
 	margin-top: 20px;
 }
 
-.side-font{
-	background-color: var(--red);
-	color: var(--cream);
-}
 
-.top-container{
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	text-align: center;
-	border: thick double var(--red);
-	font-size: var(--category-size);
-	font-family: var(--chinese-font);
-}
-
-.side-text{
-	text-align: center;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	font-family: "Ma Shan Zheng", serif;
-}
 
 .youtube-block{
 	max-width: 100px;
 }
 
-.first-paragraph{
-	font-size: 100px;
-}
 
 .grid-container{
 	display: grid;
@@ -153,6 +139,40 @@ img:hover {
 	grid-template-rows: minmax(300px,100px);
 	border: solid 2px var(--red);
 }
+
+.title-flex{
+	display: flex;
+}
+
+/* top red bar */
+p.side-font{
+	padding: 5px 0px 5px 0px;
+}
+
+.side-font{
+	background-color: var(--red);
+	color: var(--cream);
+}
+
+.cen-font{
+	padding: 5px 0px 5px 0px;
+}
+
+.top-container{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	text-align: center;
+	border: thick double var(--red);
+	font-size: calc(var(--base-size) * 0.5);
+	font-family: var(--chinese-font);
+}
+
+.red-block{
+	background-color: var(--red);
+	padding: none;
+	height: 30px;
+}
+/* top red bar */
 
 ul {
 	/* border: solid 2px var(--red); */
@@ -178,25 +198,27 @@ h3{
 p{
 	color: var(--red);
 	font-family: var(--base-font);
-	font-size: var(--base-size);
+	font-size: calc(var(--base-size) * 0.9);
 }
 
-footer{
+/* footer{
 	font-size: var(--footer-size);
 	text-align: center;
 	margin: 30px 20px;
-}
+} */
 
 h1{
 	font-size: var(--header-size);
 	font-family: var(--chinese-font);
 	text-align: center;
-	margin: var(--gutter);
+}
+
+main{
+	padding: var(--gutter);
 }
 
 body{
 	font-size: var(--base-size);
-	padding: var(--gutter);
 	color: var(--red);
 	background-color: var(--cream);
 }
