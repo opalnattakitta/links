@@ -30,9 +30,8 @@ showAudioButton.onclick = () => {
 	channelBlocks.classList.add('show-audio')
 }
 
-
 showAllButton.onclick = () => {
 	// When I click show all, it should remove show-video class
-	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio')
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 }
 
