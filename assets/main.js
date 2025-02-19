@@ -11,22 +11,27 @@ let showAllButton = document.querySelector('#show-all-button')
 // Add onclick for my buttons
 showVideoButton.onclick = () => {
 	// When I click show videos, it should add show-video clas
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 	channelBlocks.classList.add('show-video')
 }
 
 showImageButton.onclick = () => {
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 	channelBlocks.classList.add('show-image')
 }
 
 showTextButton.onclick = () => {
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 	channelBlocks.classList.add('show-text')
 }
 
 showLinkButton.onclick = () => {
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 	channelBlocks.classList.add('show-link')
 }
 
 showAudioButton.onclick = () => {
+	channelBlocks.classList.remove('show-video', 'show-image', 'show-text', 'show-link', 'show-audio');
 	channelBlocks.classList.add('show-audio')
 }
 
