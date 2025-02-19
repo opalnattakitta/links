@@ -302,13 +302,9 @@ body{
 }
 
 @media (min-width: 500px) {
-	div .dropdown {
+	nav {
 		display: none;
 	}
-}
-
-nav {
-	display: none;
 }
 
 
