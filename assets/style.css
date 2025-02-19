@@ -18,6 +18,38 @@
 	width:300px;
 }
 
+ /* javascript add show class */
+
+.show-audio{
+	li {
+		display:none;
+	}
+
+	li.audio-block {
+		display: block;
+	}
+}
+
+.show-link{
+	li {
+		display:none;
+	}
+
+	li.link-block {
+		display: block;
+	}
+}
+
+.show-text{
+	li {
+		display:none;
+	}
+
+	li.text-block {
+		display: block;
+	}
+}
+
 .show-image{
 	li {
 		display:none;
