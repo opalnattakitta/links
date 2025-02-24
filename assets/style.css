@@ -240,7 +240,7 @@ h3{
 	color: var(--red);
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
-	width: fit-content;
+	width: 100%;
 }
 
 h1{
