@@ -85,7 +85,7 @@ let renderBlock = (block) => {
 		let textItem =
 		`
 			<li class="text-block">
-				<p><em>Text</em></p>
+				<h3 class="block-title">${block.generated_title}</h3>
 				<p>${block.content_html}</p>
 			</li>
 			`
@@ -124,10 +124,20 @@ let renderBlock = (block) => {
 			let audioItem =
 				`
 				<li class="audio-block">
-					<h3 class="block-title">${block.generated_title}</h3>
-					<p><em>Audio</em></p>
-					<audio controls src="${ block.attachment.url }"></video>
-					<img src="${ block.image.thumb.url }"><img>
+				<button>
+					<figure>
+						<h3 class="block-title">${ block.generated_title }</h3>
+						<img src="${ block.image.thumb.url }"><img>
+					</figure>
+				</button>
+
+					<dialog>
+						<div>
+							<h3 class="block-title">${ block.generated_title }</h3>
+							<audio controls src="${block.attachment.url}"></audio>
+						</div>
+					<button class="Close">×</button>
+				</dialog>
 				</li>
 				`
 			channelBlocks.insertAdjacentHTML('beforeend', audioItem)

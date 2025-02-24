@@ -23,10 +23,6 @@
 	--cream: rgb(254, 250, 235);
 }
 
-.video-block{
-	width:300px;
-}
-
 #channel-description{
 	display: none;
 	padding: 10px;
@@ -84,15 +80,12 @@
 	}
 }
 
-/* img class */
+/* asset block */
 
-img {
+.image-block img {
 	font-weight: 300;
 	width: 100%;
-	/* width: 365px; */
 	margin-bottom: auto;
-	/* height: 100%; */
-	/* flex-grow: 1; */
 	object-fit: cover;
 }
 
@@ -102,8 +95,8 @@ img:hover {
 
 /* video styling */
 
-.video-block iframe {
-	width: fit-content;
+iframe {
+	width: 100%;
 }
 
 .description{
@@ -242,6 +235,7 @@ h3{
 	color: var(--red);
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
+	width: fit-content;
 }
 
 h1{
