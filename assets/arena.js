@@ -68,12 +68,10 @@ let renderBlock = (block) => {
 					</figure>
 				</button>
 				<dialog>
-					<div>
+						<button class="close">x</button>
 						<p>${block.title}</p>
+						<img src=${block.image.original.url}">
 						<p>${block.description_html}</p>
-					</div>
-					<img src=${block.image.original.url}">
-					<button class="close">x</button>
 				</dialog>
 			</li>
 		`
@@ -91,6 +89,7 @@ let renderBlock = (block) => {
 				<p>${block.content_html}</p>
 			</li>
 			`
+	channelBlocks.insertAdjacentHTML('beforeend', textItem)
 	}
 
 	// Uploaded (not linked) media…
