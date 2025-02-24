@@ -201,8 +201,6 @@ p.side-font{
 }
 /* top red bar */
 
-/* cursor */
-
 
 dialog[open] {
 	background-image: url("paper.jpg");
@@ -235,7 +233,6 @@ h3{
 	font-family: var(--base-font);
 	font-size: var(--filetitle-size);
 	color: var(--red);
-	/* margin-bottom: 20px; */
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
 }
@@ -262,8 +259,9 @@ body{
 	background-color: var(--cream);
 }
 
-.category-font a {
-	cursor: url('links/icon/cursor-Image.svg'), auto;
+.category-font:hover{
+	color: var(--blue);
+	cursor: url('links/icon/cursor-image.svg');
 }
 
 a, button {
