@@ -148,7 +148,7 @@ img:hover {
 	padding: 8px;
 	margin-top: 5px;
 	border-radius: 20px 20px 0px 0px;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 /* Dropdown content (hidden by default) */
@@ -202,7 +202,7 @@ img:hover {
 	width: 60%;
 	padding: 7px;
 	/* border-radius: 10px; */
-	cursor: pointer;
+	/* cursor: pointer; */
 	text-align: center;
 	justify-content: center;
 	margin: 0px 70px 15px 70px;
@@ -263,13 +263,10 @@ p.side-font{
 /* top red bar */
 
 /* cursor */
-.category-font a:first-child{
-	cursor: url('links/icon/cursor-Image.svg'),auto;
+.category-font:hover{
+	cursor: url('links/icon/cursor-Image.svg'), auto;
 }
 
-.category-font a:nth-child(2):hover{
-	cursor: url('links/icon/cursor-Image.svg');
-}
 
 dialog[open] {
 	background-image: url("paper.jpg");
@@ -281,7 +278,7 @@ dialog[open] {
 }
 
 button {
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 ::backdrop {
