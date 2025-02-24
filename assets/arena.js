@@ -169,8 +169,7 @@ let renderUser = (user, container) => { // You can have multiple arguments for a
 	let userAddress =
 		`
 		<div>
-			<h3>${ user.first_name }</h3>
-			<p><a href="https://are.na/${ user.slug }">Are.na profile ↗</a></p>
+			<p><a href="https://are.na/${ user.slug }">${ user.first_name }</a></p>
 		</div>
 		`
 

@@ -264,9 +264,10 @@ p.side-font{
 
 dialog[open] {
 	background-color: var(--cream);
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0,1fr ));
-	inset: var(--gutter);
+	/* display: grid;
+	grid-template-columns: repeat(2, minmax(0,1fr )); */
+	inset: calc(var(--gutter)* 4);
+	
 }
 
 button {
@@ -319,8 +320,12 @@ main{
 body{
 	font-size: var(--base-size);
 	color: var(--red);
+	background-image: url("paper-texture.jpg");
 	background-color: var(--cream);
-	background-image: url(paper-texture.jpg);
+}
+
+#channel-user {
+
 }
 
 #channel-blocks {
