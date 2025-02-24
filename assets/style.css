@@ -138,11 +138,12 @@ iframe {
 	font-size: calc(var(--base-size) * 1.2);
 	font-family: var(--chinese-font);
 	border: thick double var(--blue);
-	width: 60%;
+	width: 55%;
 	padding: 7px;
 	text-align: center;
-	justify-content: center;
-	margin: 0px 70px 15px 70px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: var(--gutter);
 }
 
 /* this section is for header big number */
@@ -245,6 +246,7 @@ h3{
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
 	width: 100%;
+	object-fit: cover;
 }
 
 h1{
@@ -279,18 +281,24 @@ a, button {
 
 
 @media (min-width: 500px) {
-	
+	.category-font{
+		padding: calc(var(--gutter)* 1.7);
+	}
+
+	.button-display{
+		margin: 15 auto;
+	}
 }
 
 
 @media (min-width: 700px) {
 
-	img {
-		width: 100%;
+	.category-font{
+		padding: calc(var(--gutter)* 3);
 	}
 
-	.center-align {
-		
+	img {
+		width: 100%;
 	}
 
 	.title-flex {
@@ -319,6 +327,14 @@ a, button {
 }
 
 @media (min-width: 1000px) {
+
+	.category-font{
+		padding: calc(var(--gutter)* 0.2);
+	}
+
+	a {
+		font-size: calc(var(--base-size) * 10);
+	}
 
 	img {
 		font-weight: 300;
