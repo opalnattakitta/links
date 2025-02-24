@@ -128,65 +128,6 @@ img:hover {
 	text-align: center;
 }
 
-/* dropdown media selection */
-
-
-/* Basic dropdown container */
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-/* Button styling */
-.dropbtn {
-	font-size: calc(var(--base-size) * 1.2);
-	font-family: var(--chinese-font);
-	background-color: var(--red);
-	color: var(--cream);
-	text-align: center;
-	width: 100%;
-	padding: 8px;
-	margin-top: 5px;
-	border-radius: 20px 20px 0px 0px;
-	/* cursor: pointer; */
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	width: 100%;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-	border-radius: 5px;
-	z-index: 1;
-}
-
-/* Dropdown links */
-.dropdown-content a {
-	color: black;
-	padding: 10px 15px;
-	text-decoration: none;
-	display: block;
-}
-
-/* Change color on hover */
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show dropdown when hovering over the button */
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-/* Change button color on hover */
-.dropdown:hover .dropbtn {
-	background-color: var(--green);
-}
-
-
-
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -201,8 +142,6 @@ img:hover {
 	border: thick double var(--blue);
 	width: 60%;
 	padding: 7px;
-	/* border-radius: 10px; */
-	/* cursor: pointer; */
 	text-align: center;
 	justify-content: center;
 	margin: 0px 70px 15px 70px;
@@ -277,13 +216,13 @@ dialog[open] {
 	padding: calc(var(--gutter)* 1);
 }
 
-button {
-	/* cursor: pointer; */
-}
-
 ::backdrop {
 	background-color: rgb(0 0 0 / 75%); /* A dark overlay. */
-	backdrop-filter: blur(12px); /* Maybe a little “glassmorphism”? */
+	backdrop-filter: blur(10px); /* Maybe a little “glassmorphism”? */
+}
+
+a, button {
+	cursor: pointer;
 }
 
 ul {
