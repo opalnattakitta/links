@@ -182,7 +182,19 @@ let renderUser = (user, container) => { // You can have multiple arguments for a
 
 let initInteraction = () => {
 	let imageBlocks = document.querySelectorAll('.image-block')
-	console.log(imageButtons)
+	imageBlocks.forEach((block) => {
+		let openButton = block.querySelector('button')
+		let dialog = block.querySelector('dialog')
+		let closeButton = dialog.querySelector('button')
+
+		openButton.onclick = () => {
+			dialog.showModal()
+		}
+
+		close.Button.onclick =() => {
+			dialog.close()
+		}
+	})
 }
 
 
