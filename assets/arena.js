@@ -61,8 +61,20 @@ let renderBlock = (block) => {
 		let ImageItem =
 		`
 			<li class="image-block">
-				<h3 class="block-title">${block.title}</h3>
-				<img class="image" src="${block.image.original.url}"></img>
+				<button>
+					<figure>
+						<h3 class="block-title">${block.title}</h3>
+						<img class="image" src="${block.image.original.url}">
+					</figure>
+				</button>
+				<dialog>
+					<div>
+						<p>${block.title}</p>
+						<p>${block.description_html}</p>
+					</div>
+					<img src=${block.image.original.url}">
+					<button class="close">x</button>
+				</dialog>
 			</li>
 		`
 	channelBlocks.insertAdjacentHTML('beforeend', ImageItem)
@@ -168,6 +180,11 @@ let renderUser = (user, container) => { // You can have multiple arguments for a
 	container.insertAdjacentHTML('beforeend', userAddress)
 }
 
+let initInteraction = () => {
+	let imageBlocks = document.querySelectorAll('.image-block')
+	console.log(imageButtons)
+}
+
 
 
 // Now that we have said what we can do, go get the data:
@@ -182,6 +199,8 @@ fetch(`https://api.are.na/v2/channels/${channelSlug}?per=100`, { cache: 'no-stor
 			// console.log(block) // The data for a single block
 			renderBlock(block) // Pass the single block data to the render function
 		})
+
+		initInteraction()
 
 		// Also display the owner and collaborators:
 		let channelUsers = document.getElementById('channel-users') // Show them together

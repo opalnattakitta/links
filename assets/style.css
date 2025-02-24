@@ -195,6 +195,19 @@ img:hover {
 }
 
 button {
+	/* color: var(--blue);
+	font-size: calc(var(--base-size) * 1.2);
+	font-family: var(--chinese-font);
+	border: thick double var(--blue);
+	width: 60%;
+	padding: 7px;
+	cursor: pointer;
+	text-align: center;
+	justify-content: center;
+	margin: 0px 70px 15px 70px; */
+}
+
+.button-display {
 	color: var(--blue);
 	font-size: calc(var(--base-size) * 1.2);
 	font-family: var(--chinese-font);
@@ -206,11 +219,6 @@ button {
 	text-align: center;
 	justify-content: center;
 	margin: 0px 70px 15px 70px;
-	
-}
-
-a {
-
 }
 
 /* this section is for header big number */
@@ -266,6 +274,11 @@ p.side-font{
 	height: 30px;
 }
 /* top red bar */
+
+dialog {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0,1fr ));
+}
 
 ul {
 	border: solid 1.5px var(--red);
