@@ -262,6 +262,18 @@ p.side-font{
 }
 /* top red bar */
 
+/* cursor */
+.category-font a:first-child{
+	cursor: crosshair;
+	cursor: url('links/icon/cursor-Image.svg'),auto;
+}
+
+.category-font a:nth-child(2):hover
+	cursor: crosshair;
+	cursor: url('links/icon/cursor-Image.svg');
+}
+/* cursor */
+
 dialog[open] {
 	background-image: url("paper.jpg");
 	background-color: var(--cream);
@@ -322,14 +334,6 @@ body{
 	font-size: var(--base-size);
 	color: var(--red);
 	background-color: var(--cream);
-}
-
-#channel-user {
-
-}
-
-#channel-blocks {
-
 }
 
 
@@ -425,11 +429,11 @@ body{
 	}
 
 	li {
-		max-width: fit-content;
+		/* max-width: fit-content;
 		height: auto;
 		border: solid 1px var(--red); */
 		border-left: solid 1px var(--red);
 		border-bottom: solid 1px var(--red);
-		justify-content: center;
+		justify-content: center; */
 	}
 }
