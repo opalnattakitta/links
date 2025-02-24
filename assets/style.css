@@ -261,7 +261,6 @@ body{
 
 .category-font:hover{
 	color: var(--blue);
-	cursor: url('links/icon/cursor-image.svg'), auto;
 }
 
 a, button {
