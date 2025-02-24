@@ -84,8 +84,7 @@
 	}
 }
 
-/* java class */
-
+/* img class */
 
 img {
 	font-weight: 300;
@@ -99,6 +98,12 @@ img {
 
 img:hover {
 	box-shadow: 0 0 2px 1px rgba(125, 13, 13, 0.5);
+}
+
+/* video styling */
+
+.video-block iframe {
+	width: fit-content;
 }
 
 .description{
@@ -201,10 +206,11 @@ p.side-font{
 }
 /* top red bar */
 
-
+/* modal */
 dialog[open] {
-	background-image: url("paper.jpg");
+	background-image: url("links/images/paper.jpg");
 	background-color: var(--cream);
+	border: 4mm ridge rgba(52, 3, 3, 0.6);
 	/* display: grid;
 	grid-template-columns: repeat(2, minmax(0,1fr )); */
 	inset: calc(var(--gutter)* 4);
@@ -212,9 +218,10 @@ dialog[open] {
 }
 
 ::backdrop {
-	background-color: rgb(0 0 0 / 75%); /* A dark overlay. */
-	backdrop-filter: blur(10px); /* Maybe a little “glassmorphism”? */
+	background-color: rgba(46, 1, 1, 0.75); /* A dark overlay. */
+	backdrop-filter: blur(5px); /* Maybe a little “glassmorphism”? */
 }
+
 
 ul {
 	border: solid 1.5px var(--red);
