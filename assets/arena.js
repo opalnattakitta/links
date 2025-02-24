@@ -146,7 +146,7 @@ let renderBlock = (block) => {
 			let linkedVideoItem =
 				`
 				<li class="video-block">
-					<p><em>Linked Video</em></p>
+					<img src="${ block.image.thumb.url }"><img>
 					${ block.embed.html }
 				</li>
 				`
