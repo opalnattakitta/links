@@ -264,15 +264,12 @@ p.side-font{
 
 /* cursor */
 .category-font a:first-child{
-	cursor: crosshair;
 	cursor: url('links/icon/cursor-Image.svg'),auto;
 }
 
-.category-font a:nth-child(2):hover
-	cursor: crosshair;
+.category-font a:nth-child(2):hover{
 	cursor: url('links/icon/cursor-Image.svg');
 }
-/* cursor */
 
 dialog[open] {
 	background-image: url("paper.jpg");
