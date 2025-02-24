@@ -199,6 +199,11 @@ p.side-font{
 }
 /* top red bar */
 
+dialog audio {
+	width: 100%;
+	height: revert;
+}
+
 /* modal */
 dialog[open] {
 	background-image: url("links/images/paper.jpg");

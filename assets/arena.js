@@ -208,6 +208,29 @@ let initInteraction = () => {
 			}
 		}
 	})
+
+	let  audioBlocks = document.querySelectorAll('.audio-block')
+	audioBlocks.forEach((block) => {
+		let openButton = block.querySelector('button')
+		let dialog = block.querySelector('dialog')
+		let closeButton = dialog.querySelector('button')
+
+
+		openButton.onclick = () => {
+			dialog.showModal();
+
+		}
+
+		closeButton.onclick = () => {
+			dialog.close()
+		}
+
+		dialog.onclick = (event) => {
+			if (event.target == dialog) {
+				dialog.close()
+			}
+		}
+	})
 }
 
 
