@@ -191,9 +191,14 @@ let initInteraction = () => {
 			dialog.showModal()
 		}
 
-		close.Button.onclick =() => {
+		closeButton.onclick =() => {
 			dialog.close()
 		}
+
+		modal.onclick = (event) => { // Listen on our `modal` also…
+			if (event.target == modal) { // Only if clicks are to itself (the background).
+				modal.close() // Close it then too.
+			}
 	})
 }
 
