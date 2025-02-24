@@ -28,6 +28,7 @@
 }
 
 #channel-description{
+	display: none;
 	padding: 10px;
 	border: solid var(--red);
 }
@@ -111,7 +112,7 @@ img:hover {
 	font-size: var(--category-size);
 	font-family: var(--chinese-font);
 	text-align: center;
-	padding: 20px;
+	padding: calc(var(--gutter)* 1);
 }
 
 .category-container{
