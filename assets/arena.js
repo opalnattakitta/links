@@ -258,6 +258,28 @@ let initInteraction = () => {
 			}
 		}
 	})
+
+	let  videoBlocks = document.querySelectorAll('.video-block')
+	videoBlocks.forEach((block) => {
+		let openButton = block.querySelector('button')
+		let dialog = block.querySelector('dialog')
+		let closeButton = dialog.querySelector('button')
+
+		openButton.onclick = () => {
+			dialog.showModal();
+
+		}
+
+		closeButton.onclick = () => {
+			dialog.close()
+		}
+
+		dialog.onclick = (event) => {
+			if (event.target == dialog) {
+				dialog.close()
+			}
+		}
+	})
 }
 
 

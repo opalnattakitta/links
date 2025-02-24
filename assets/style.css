@@ -199,6 +199,10 @@ p.side-font{
 }
 /* top red bar */
 
+dialog link {
+	width: 100%;
+}
+
 dialog audio {
 	width: 100%;
 	height: revert;
