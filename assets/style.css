@@ -194,19 +194,6 @@ img:hover {
 	border: solid 2px var(--red);
 }
 
-button {
-	/* color: var(--blue);
-	font-size: calc(var(--base-size) * 1.2);
-	font-family: var(--chinese-font);
-	border: thick double var(--blue);
-	width: 60%;
-	padding: 7px;
-	cursor: pointer;
-	text-align: center;
-	justify-content: center;
-	margin: 0px 70px 15px 70px; */
-}
-
 .button-display {
 	color: var(--blue);
 	font-size: calc(var(--base-size) * 1.2);
@@ -276,8 +263,12 @@ p.side-font{
 /* top red bar */
 
 dialog {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0,1fr ));
+	/* display: grid;
+	grid-template-columns: repeat(2, minmax(0,1fr )); */
+}
+
+button {
+	cursor: pointer;
 }
 
 ul {
@@ -323,6 +314,10 @@ body{
 	color: var(--red);
 	background-color: var(--cream);
 	background-image: url(paper-texture.jpg);
+}
+
+#channel-blocks {
+
 }
 
 
