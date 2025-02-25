@@ -138,6 +138,9 @@ img {
 	overflow: hidden;
 	max-height: 200px;
 }
+.text-block dialog[open]{
+	overflow-y: scroll;
+}
 
 img:hover {
 	box-shadow: 0 0 2px 1px rgba(125, 13, 13, 0.5);
@@ -445,6 +448,10 @@ a, button {
 		object-position: center;
 		overflow: clip;
 		aspect-ratio: 1 / 1;
+	}
+
+	dialog[open] img{
+		object-fit: contain;
 	}
 
 	h1 {
