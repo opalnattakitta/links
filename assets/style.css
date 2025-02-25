@@ -272,6 +272,16 @@ dialog[open] {
 	max-height: 500px;
 }
 
+em {
+	font-weight: 500;
+}
+
+footer p {
+	font-size: calc(var(--base-size)* 0.8);
+	text-align: center;
+	margin: var(--gutter);
+}
+
 ul {
 	border: solid 1.5px var(--red);
 }

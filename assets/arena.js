@@ -120,8 +120,15 @@ let renderBlock = (block) => {
 			let videoItem =
 				`
 				<li class="video-block">
-				<h3 class="block-title">${block.generated_title}</h3>
-				<img src="${ block.image.thumb.url }"></img>
+					<button>
+						<h3 class="block-title">${block.generated_title}</h3>
+						<img src="${ block.image.original.url }"></img>
+					</button>
+				<dialog>
+					<h3 class="block-title">${block.generated_title}</h3>
+					${ block.attachment.url }
+					<button class="Close">×</button>
+				</dialog>
 				</li>
 				`
 			channelBlocks.insertAdjacentHTML('beforeend', videoItem)
