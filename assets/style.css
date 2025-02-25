@@ -83,15 +83,12 @@
 /* asset block */
 
 .image-block img {
-	font-weight: 300;
+	display: inline-block;
 	width: 100%;
-	margin-bottom: auto;
 	object-fit: cover;
-	z-index: 0;
-}
-
-.block-title h3 {
-	max-height: 300px;
+	object-position: center;
+	overflow: clip;
+	aspect-ratio: 1 / 1;
 }
 
 img:hover {
@@ -119,7 +116,6 @@ iframe {
 }
 
 .category-container{
-	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
 	border: solid 1px var(--red);
 	background-color: var(--red);
 	border-radius: 20px 20px 0px 0px;
@@ -134,7 +130,7 @@ iframe {
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: minmax(300px,100px);
+	grid-template-rows: minmax(300px,400px);
 	border: solid 2px var(--red);
 }
 
@@ -230,6 +226,9 @@ dialog[open] {
 	backdrop-filter: blur(5px); /* Maybe a little “glassmorphism”? */
 }
 
+.block-title h3 {
+	max-height: 500px;
+}
 
 ul {
 	border: solid 1.5px var(--red);
@@ -237,10 +236,9 @@ ul {
 
 li {
 	max-width: fit-content;
-	/* border: solid 1px var(--red); */
-	/* border-left: solid 1px var(--red);
-	border-bottom: solid 1px var(--red); */
 	justify-content: center;
+	border-left: solid 1px var(--red);
+	border-bottom: solid 1px var(--red);
 }
 
 
@@ -251,7 +249,7 @@ h3{
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
 	width: 100%;
-	object-fit: cover;
+	height: 80px;
 }
 
 h1{
@@ -321,6 +319,10 @@ a, button {
 		display: none;
 	}
 
+	h1 {
+		font-size: calc(var(--header-size)* 1.5);
+	}
+
 }
 
 @media (min-width: 1000px) {
@@ -335,7 +337,7 @@ a, button {
 	}
 
 	a {
-		font-size: calc(var(--base-size) * 8);
+		font-size: calc(var(--base-size) * 1.7);
 	}
 
 	.title-flex {
@@ -372,11 +374,7 @@ a, button {
 	}
 
 	p {
-		font-size: calc(var(--base-size) * 1.3);
-	}
-
-	a {
-		font-size: calc(var(--base-size) * 1.7);
+		font-size: calc(var(--base-size) * 1.1);
 	}
 
 	li {
