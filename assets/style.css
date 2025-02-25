@@ -278,9 +278,9 @@ ul {
 
 li {
 	max-width: fit-content;
-	justify-content: center;
-	border-left: solid 1px var(--red);
+	border-left: solid 0.5px var(--red);
 	border-bottom: solid 1px var(--red);
+	border-right: solid 0.25px var(--red);
 }
 
 

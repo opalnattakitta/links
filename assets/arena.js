@@ -98,8 +98,12 @@ let renderBlock = (block) => {
 				<div class="crop-container">
 					<p>${block.content}</p>
 				</div>
-				
 			</button>
+			<dialog>
+					<button class="close">x</button>
+					<p>${block.title}</p>
+					<p>${block.content_html}</p>
+			</dialog>
 			</li>
 			`
 	channelBlocks.insertAdjacentHTML('beforeend', textItem)
@@ -277,6 +281,28 @@ let initInteraction = () => {
 
 	let  videoBlocks = document.querySelectorAll('.video-block')
 	videoBlocks.forEach((block) => {
+		let openButton = block.querySelector('button')
+		let dialog = block.querySelector('dialog')
+		let closeButton = dialog.querySelector('button')
+
+		openButton.onclick = () => {
+			dialog.showModal();
+
+		}
+
+		closeButton.onclick = () => {
+			dialog.close()
+		}
+
+		dialog.onclick = (event) => {
+			if (event.target == dialog) {
+				dialog.close()
+			}
+		}
+	})
+
+	let  textBlocks = document.querySelectorAll('.text-block')
+	textBlocks.forEach((block) => {
 		let openButton = block.querySelector('button')
 		let dialog = block.querySelector('dialog')
 		let closeButton = dialog.querySelector('button')
