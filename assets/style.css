@@ -297,7 +297,12 @@ a, button {
 @media (min-width: 700px) {
 
 	.category-font{
-		padding: calc(var(--gutter)* 3);
+		padding: calc(var(--gutter)* 0.4);
+	}
+
+	.category-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	img {
@@ -327,6 +332,10 @@ a, button {
 
 @media (min-width: 1000px) {
 
+	.red-block{
+		height: 50px;
+	}
+
 	.button-display{
 		width: 45%;
 		font-size: calc(var(--base-size) * 2);
@@ -354,8 +363,8 @@ a, button {
 	}
 
 	h1 {
-		font-size: calc(var(--header-size)* 3);
-		line-height:calc(var(--header-size)* 2.4) ;
+		font-size: calc(var(--header-size)* 2.5);
+		line-height:calc(var(--header-size)* 2.6) ;
 	}
 
 	ul {
