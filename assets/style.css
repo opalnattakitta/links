@@ -124,8 +124,9 @@
 	overflow: hidden;
 }
 
-.crop-container {
+.crop-container p{
 	overflow: hidden;
+	max-height: 200px;
 }
 
 img:hover {

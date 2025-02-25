@@ -95,7 +95,10 @@ let renderBlock = (block) => {
 			<li class="text-block">
 			<button>
 				<h3 class="block-title">${block.generated_title}</h3>
-				<p class="crop-container">${block.content_html}</p>
+				<div class="crop-container">
+					<p>${block.content}</p>
+				</div>
+				
 			</button>
 			</li>
 			`
