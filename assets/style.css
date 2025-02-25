@@ -82,6 +82,14 @@
 
 /* asset block */
 
+.audio-block img {
+
+	object-fit: cover;
+	overflow: clip;
+	aspect-ratio: 1 / 1;
+}
+
+
 .image-block img {
 	display: inline-block;
 	width: 100%;
@@ -210,6 +218,11 @@ dialog audio {
 	height: revert;
 }
 
+.video-block dialog[open] iframe {
+	width: 100%;
+	height: 100%;
+}
+
 /* modal */
 dialog[open] {
 	background-image: url("links/images/paper.jpg");
@@ -272,6 +285,8 @@ body{
 	font-size: var(--base-size);
 	color: var(--red);
 	background-color: var(--cream);
+	/* background-image: url("links/images/paper.jpg");
+	background-size: cover; */
 }
 
 .category-font:hover{

@@ -144,6 +144,7 @@ let renderBlock = (block) => {
 					<dialog>
 						<div>
 							<h3 class="block-title">${ block.generated_title }</h3>
+							<img src="${ block.image.thumb.url }"><img>
 							<audio controls src="${block.attachment.url}"></audio>
 						</div>
 					<button class="Close">×</button>
@@ -166,8 +167,16 @@ let renderBlock = (block) => {
 			let linkedVideoItem =
 				`
 				<li class="video-block">
-					<img src="${ block.image.thumb.url }"><img>
-					${ block.embed.html }
+					<button>
+						<figure>
+							<h3 class="block-title">${ block.generated_title }</h3>
+							<img src="${ block.image.thumb.url }"><img>
+						</figure>
+					</button>
+					<dialog>
+						${ block.embed.html }
+						<button class="Close">×</button>
+					</dialog>
 				</li>
 				`
 			channelBlocks.insertAdjacentHTML('beforeend', linkedVideoItem)
