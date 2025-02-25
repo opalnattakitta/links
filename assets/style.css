@@ -313,12 +313,12 @@ li {
 
 h3{
 	font-family: var(--base-font);
-	font-size: var(--filetitle-size);
+	font-size: calc(var(--base-size)* 0.9);
 	color: var(--red);
 	border-bottom: solid 1px var(--red);
 	padding: 5px;
 	width: 100%;
-	height: 80px;
+	height: 50px;
 }
 
 h1{
@@ -394,6 +394,10 @@ a, button {
 
 	div .dropdown {
 		display: none;
+	}
+
+	h3 {
+		height: 80px;
 	}
 
 	h1 {
