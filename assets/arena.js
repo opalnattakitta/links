@@ -41,6 +41,7 @@ let renderBlock = (block) => {
 		let linkItem =
 			`
 			<li class="link-block">
+			<button>
 				<h3>${ block.title }</h3>
 					${ block.description_html }
 				<picture> 
@@ -48,6 +49,7 @@ let renderBlock = (block) => {
 					<source media="(max-width: 640px)" srcset="${ block.image.large.url }">
 					<img src="${ block.image.original.url }">
 				</picture>
+			</button>
 					<dialog>
 						<button class="close">x</button>
 							<div>
@@ -91,8 +93,10 @@ let renderBlock = (block) => {
 		let textItem =
 		`
 			<li class="text-block">
+			<button>
 				<h3 class="block-title">${block.generated_title}</h3>
 				<p>${block.content_html}</p>
+			</button>
 			</li>
 			`
 	channelBlocks.insertAdjacentHTML('beforeend', textItem)

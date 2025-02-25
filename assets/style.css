@@ -87,6 +87,11 @@
 	width: 100%;
 	margin-bottom: auto;
 	object-fit: cover;
+	z-index: 0;
+}
+
+.block-title h3 {
+	max-height: 300px;
 }
 
 img:hover {
