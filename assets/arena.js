@@ -43,7 +43,6 @@ let renderBlock = (block) => {
 			<li class="link-block">
 			<button>
 				<h3>${ block.title }</h3>
-					${ block.description_html }
 				<picture> 
 					<source media="(max-width: 428px)" srcset="${ block.image.thumb.url }">
 					<source media="(max-width: 640px)" srcset="${ block.image.large.url }">
@@ -55,6 +54,7 @@ let renderBlock = (block) => {
 							<div>
 								<p>${block.title}</p>
 								<img src=${block.image.original.url}">
+								${ block.description_html }
 								<p><a href="${ block.source.url }">See the original ↗</a></p>
 							</div>
 					</dialog>
@@ -95,7 +95,7 @@ let renderBlock = (block) => {
 			<li class="text-block">
 			<button>
 				<h3 class="block-title">${block.generated_title}</h3>
-				<p>${block.content_html}</p>
+				<p class="crop-container">${block.content_html}</p>
 			</button>
 			</li>
 			`
