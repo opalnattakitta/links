@@ -82,7 +82,7 @@
 
 /* asset block */
 
-.audio-block img {
+/* .audio-block img {
 	object-fit: cover;
 	object-position: center;
 	overflow: clip;
@@ -115,7 +115,17 @@
 	object-position: center;
 	overflow: clip;
 	aspect-ratio: 1 / 1;
+} */
+
+img {
+	display: inline-block;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	overflow: clip;
 }
+
+
 
 .text-block p{
 	font-size: var(--base-size);
@@ -156,7 +166,8 @@ iframe {
 	border: solid 1px var(--red);
 	background-color: var(--red);
 	border-radius: 20px 20px 0px 0px;
-	padding: calc(var(--gutter)* 0.5);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 
@@ -252,6 +263,12 @@ dialog audio {
 	height: 100%;
 }
 
+.image-block dialog[open] {
+	width: auto;
+	object-fit: contain;
+
+}
+
 /* modal */
 dialog[open] {
 	background-image: url("links/images/paper.jpg");
@@ -259,7 +276,7 @@ dialog[open] {
 	border: 4mm ridge rgba(52, 3, 3, 0.6);
 	/* display: grid;
 	grid-template-columns: repeat(2, minmax(0,1fr )); */
-	inset: calc(var(--gutter)* 4);
+	inset: calc(var(--gutter)* 2);
 	padding: calc(var(--gutter)* 1);
 }
 
@@ -338,9 +355,6 @@ a, button {
 
 
 @media (min-width: 500px) {
-	.category-font{
-		padding: calc(var(--gutter)* 1.7);
-	}
 
 	.button-display{
 		margin: 15 auto;
@@ -360,8 +374,12 @@ a, button {
 	}
 
 	img {
+		display: inline-block;
 		width: 100%;
-		object-fit: contain;
+		object-fit: cover;
+		object-position: center;
+		overflow: clip;
+		aspect-ratio: 1 / 1;
 	}
 
 	.title-flex {
@@ -414,6 +432,15 @@ a, button {
 	.vertical-title{
 		font-size: calc(var(--header-size) * 1.2);
 		margin: auto;
+	}
+
+	img {
+		display: inline-block;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		overflow: clip;
+		aspect-ratio: 1 / 1;
 	}
 
 	h1 {
