@@ -23,10 +23,17 @@
 	--cream: rgb(254, 250, 235);
 }
 
-#channel-description{
-	display: none;
+#channel-description {
+	background-color: #e9dada;
+	overflow-y: scroll;
+	height: 107px;
 	padding: 10px;
-	border: solid var(--red);
+	border-left: double 5px #a30202;
+	border-right: double 5px #a30202;
+	border-bottom: double 5px #a30202;
+}
+#channel-description p {
+	color: var(--blue);
 }
 
  /* javascript add show class */
@@ -80,43 +87,7 @@
 	}
 }
 
-/* asset block */
-
-/* .audio-block img {
-	object-fit: cover;
-	object-position: center;
-	overflow: clip;
-	aspect-ratio: 1 / 1;
-}
-
-
-.image-block img {
-	display: inline-block;
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-	overflow: clip;
-	aspect-ratio: 1 / 1;
-}
-
-.link-block img {
-	display: inline-block;
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-	overflow: clip;
-	aspect-ratio: 1 / 1;
-}
-
-.video-block img {
-	display: inline-block;
-	width: 100%;
-	object-fit: cover;
-	object-position: center;
-	overflow: clip;
-	aspect-ratio: 1 / 1;
-} */
-
+/* image styling */
 img {
 	display: inline-block;
 	width: 100%;
@@ -124,7 +95,6 @@ img {
 	object-position: center;
 	overflow: clip;
 }
-
 
 
 .text-block p{
@@ -138,6 +108,7 @@ img {
 	overflow: hidden;
 	max-height: 200px;
 }
+
 .text-block dialog[open]{
 	overflow-y: scroll;
 }
@@ -260,6 +231,7 @@ p.side-font{
 }
 /* top red bar */
 
+/* Modal styling */
 dialog link {
 	width: 100%;
 }
@@ -274,21 +246,40 @@ dialog audio {
 	height: 100%;
 }
 
-.image-block dialog[open] {
+/* .image-block dialog[open] {
 	width: auto;
+	height:fit-content;
 	object-fit: contain;
+	object-position: center;
+} */
 
+/* padding: calc(var(--gutter)* 1); */
+
+.modal-nav{
+	background-color: #0e0e93;
+	color: var(--cream);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	text-align: auto;
+	padding: 5px;
 }
 
-/* modal */
+.modal-nav p{
+	color: var(--cream);
+}
+
+/* main modal */
 dialog[open] {
-	background-image: url("links/images/paper.jpg");
 	background-color: var(--cream);
-	border: 4mm ridge rgba(52, 3, 3, 0.6);
-	/* display: grid;
-	grid-template-columns: repeat(2, minmax(0,1fr )); */
+	display: grid;
+	margin: auto;
+	border: double 10px var(--blue);
+	height:fit-content;
+	object-fit: contain;
+	object-position: center;
+	/* grid-template-columns: repeat(2, minmax(0,1fr )); */
 	inset: calc(var(--gutter)* 2);
-	padding: calc(var(--gutter)* 1);
 }
 
 ::backdrop {

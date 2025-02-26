@@ -50,7 +50,10 @@ let renderBlock = (block) => {
 				</picture>
 			</button>
 					<dialog>
-						<button class="close">x</button>
+						<div class="modal-nav">
+							<p>Link【链接】</p>
+							<button class="close">❀</button>
+						</div>
 							<div>
 								<p>${block.title}</p>
 								<img src=${block.image.original.url}">
@@ -76,10 +79,15 @@ let renderBlock = (block) => {
 					</figure>
 				</button>
 				<dialog>
-						<button class="close">x</button>
-						<p>${block.title}</p>
-						<img src=${block.image.original.url}">
-						<p>${block.description_html}</p>
+						<div class="modal-nav">
+							<p>Image【图像】</p>
+							<button class="close">❀</button>
+						</div>
+						<div>
+							<p>${block.title}</p>
+							<img src=${block.image.original.url}">
+							<p>${block.description_html}</p>
+						</div>
 				</dialog>
 			</li>
 		`
@@ -100,7 +108,10 @@ let renderBlock = (block) => {
 				</div>
 			</button>
 			<dialog>
-				<button class="close">x</button>
+					<div class="modal-nav">
+							<p>Text【文字】</p>
+							<button class="close">❀</button>
+						</div>
 					<p>${block.title}</p>
 					<p>${block.content_html}</p>
 			</dialog>
