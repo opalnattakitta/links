@@ -306,9 +306,9 @@ dialog[open] {
 	text-align: right;
 }
 
-.block-title h3 {
+/* .block-title h3 {
 	max-height: 500px;
-}
+} */
 
 em {
 	font-weight: 500;
@@ -413,14 +413,6 @@ a, button {
 		grid-template-rows: minmax(300px,100px);
 	}
 
-	div .dropdown {
-		display: none;
-	}
-
-	h3 {
-		height: 80px;
-	}
-
 	h1 {
 		font-size: calc(var(--header-size)* 1.5);
 	}
@@ -443,7 +435,7 @@ a, button {
 	}
 
 	a {
-		font-size: calc(var(--base-size) * 1.7);
+		font-size: calc(var(--base-size) * 1.2);
 	}
 
 	.title-flex {
@@ -459,6 +451,11 @@ a, button {
 		margin: auto;
 	}
 
+	.button-display{
+		font-size: calc(var(--base-size) * 1.7);
+		padding: 10px;
+	}
+
 	img {
 		display: inline-block;
 		width: 100%;
@@ -470,6 +467,20 @@ a, button {
 
 	dialog[open] img{
 		object-fit: contain;
+	}
+
+	dialog[open] {
+		position: center;
+		inset: calc(var(--gutter)* 20);
+
+	}
+
+	#media-type {
+		font-size: calc(var(--base-size)*1.2);
+	}
+	
+	h3 {
+		font-size: calc(var(--base-size)* 0.9);
 	}
 
 	h1 {
@@ -486,6 +497,7 @@ a, button {
 	.category-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		padding: 10px;
 	}
 
 	main {
