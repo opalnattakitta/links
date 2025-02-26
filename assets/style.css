@@ -186,15 +186,23 @@ iframe {
 }
 
 .button-display {
-	color: var(--blue);
+	color: var(--cream);
+	background-color: var(--blue);
 	font-size: calc(var(--base-size) * 1.2);
 	font-family: var(--chinese-font);
-	border: thick double var(--blue);
+	border: thick double var(--cream);
 	width: 55%;
 	padding: 7px;
 	text-align: center;
 	display: block;
 	margin: 0 auto;
+}
+
+#media-type {
+	color: var(--blue);
+	font-size: calc(var(--base-size)*0.8);
+	font-weight: 400;
+	text-align: center;
 	margin-bottom: var(--gutter);
 }
 
@@ -286,6 +294,11 @@ dialog[open] {
 ::backdrop {
 	background-color: rgba(46, 1, 1, 0.75); /* A dark overlay. */
 	backdrop-filter: blur(5px); /* Maybe a little “glassmorphism”? */
+}
+
+.close {
+	font-family: var(--chinese-font);
+	text-align: right;
 }
 
 .block-title h3 {

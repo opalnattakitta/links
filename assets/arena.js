@@ -100,7 +100,7 @@ let renderBlock = (block) => {
 				</div>
 			</button>
 			<dialog>
-					<button class="close">x</button>
+				<button class="close">x</button>
 					<p>${block.title}</p>
 					<p>${block.content_html}</p>
 			</dialog>
@@ -122,12 +122,12 @@ let renderBlock = (block) => {
 				<li class="video-block">
 					<button>
 						<h3 class="block-title">${block.generated_title}</h3>
-						<img src="${ block.image.original.url }"></img>
+						<img src="${ block.image.original.url }">
 					</button>
 				<dialog>
-					<h3 class="block-title">${block.generated_title}</h3>
-					${ block.attachment.url }
 					<button class="Close">×</button>
+						<h3 class="block-title">${block.generated_title}</h3>
+						${ block.attachment.url }
 				</dialog>
 				</li>
 				`
@@ -151,14 +151,14 @@ let renderBlock = (block) => {
 				<button>
 					<figure>
 						<h3 class="block-title">${ block.generated_title }</h3>
-						<img src="${ block.image.thumb.url }"><img>
+						<img src="${ block.image.thumb.url }">
 					</figure>
 				</button>
 
 					<dialog>
 						<div>
 							<h3 class="block-title">${ block.generated_title }</h3>
-							<img src="${ block.image.thumb.url }"><img>
+							<img src="${ block.image.thumb.url }">
 							<audio controls src="${block.attachment.url}"></audio>
 						</div>
 					<button class="Close">×</button>
@@ -184,12 +184,12 @@ let renderBlock = (block) => {
 					<button>
 						<figure>
 							<h3 class="block-title">${ block.generated_title }</h3>
-							<img src="${ block.image.thumb.url }"><img>
+							<img src="${ block.image.thumb.url }">
 						</figure>
 					</button>
 					<dialog>
-						${ block.embed.html }
 						<button class="Close">×</button>
+						${ block.embed.html }
 					</dialog>
 				</li>
 				`
