@@ -54,7 +54,7 @@ let renderBlock = (block) => {
 							<p>Link【链接】</p>
 							<button class="close">❀</button>
 						</div>
-							<div>
+							<div class="modal-body">
 								<p>${block.title}</p>
 								<img src=${block.image.original.url}">
 								${ block.description_html }
@@ -83,7 +83,7 @@ let renderBlock = (block) => {
 							<p>Image【图像】</p>
 							<button class="close">❀</button>
 						</div>
-						<div>
+						<div class="modal-body">
 							<p>${block.title}</p>
 							<img src=${block.image.original.url}">
 							<p>${block.description_html}</p>
@@ -111,9 +111,11 @@ let renderBlock = (block) => {
 					<div class="modal-nav">
 							<p>Text【文字】</p>
 							<button class="close">❀</button>
-						</div>
+					</div>
+				<div class="modal-text">
 					<p>${block.title}</p>
 					<p>${block.content_html}</p>
+				</div>
 			</dialog>
 			</li>
 			`
@@ -136,9 +138,14 @@ let renderBlock = (block) => {
 						<img src="${ block.image.original.url }">
 					</button>
 				<dialog>
-					<button class="Close">×</button>
+					<div class="modal-nav">
+							<p>Video【视频】</p>
+							<button class="close">❀</button>
+						</div>
+					<div class="modal-body">
 						<h3 class="block-title">${block.generated_title}</h3>
 						${ block.attachment.url }
+					</div>
 				</dialog>
 				</li>
 				`
@@ -167,12 +174,15 @@ let renderBlock = (block) => {
 				</button>
 
 					<dialog>
-						<div>
+						<div class="modal-nav">
+							<p>Audio【音频】</p>
+							<button class="close">❀</button>
+						</div>
+						<div class="modal-body">
 							<h3 class="block-title">${ block.generated_title }</h3>
 							<img src="${ block.image.thumb.url }">
 							<audio controls src="${block.attachment.url}"></audio>
 						</div>
-					<button class="Close">×</button>
 				</dialog>
 				</li>
 				`

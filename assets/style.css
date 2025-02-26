@@ -110,8 +110,10 @@ img {
 }
 
 .text-block dialog[open]{
+	max-height: 400px;
 	overflow-y: scroll;
 }
+
 
 img:hover {
 	box-shadow: 0 0 2px 1px rgba(125, 13, 13, 0.5);
@@ -246,12 +248,12 @@ dialog audio {
 	height: 100%;
 }
 
-/* .image-block dialog[open] {
+.image-block dialog[open] {
 	width: auto;
 	height:fit-content;
 	object-fit: contain;
 	object-position: center;
-} */
+}
 
 /* padding: calc(var(--gutter)* 1); */
 
@@ -267,6 +269,18 @@ dialog audio {
 
 .modal-nav p{
 	color: var(--cream);
+}
+
+.modal-body{
+	padding: 10px;
+}
+
+.modal-body p{
+	border-top: solid 1px var(--red);
+}
+
+.modal-text {
+	overflow-y: scroll;
 }
 
 /* main modal */
