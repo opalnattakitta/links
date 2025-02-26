@@ -213,9 +213,7 @@ let renderBlock = (block) => {
 							<p>Video【视频】</p>
 							<button class="close">❀</button>
 					</div>
-						<div class="modal-body">
 							${ block.embed.html }
-						</div>
 					</dialog>
 				</li>
 				`
